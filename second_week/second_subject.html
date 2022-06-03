@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2주차 팀별 미션</title>
+    <style>
+      .theBox {
+        width: 50%;
+        border-radius: 20px;
+        border: 3px solid rgb(0, 209, 249);
+        padding: 1px 3px;
+        margin-bottom: 5px;
+      }
+      .motherBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .headBox {
+        display: flex;
+        justify-content: center;
+      }
+      .title {
+        margin: 0;
+      }
+      th,
+      td {
+        border: 1px solid;
+      }
+      .tablePractice {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="motherBox">
+      <div class="theBox headBox">
+        <h1 class="title headerTitle">💕2주차 미션🎶</h1>
+      </div>
+
+      <div class="theBox subjectBox">
+        <h2 class="title subjectTitle">
+          📌Q1. 2주 차에 배워본 다양한 태그들을 정리해봅시다.<br />
+          빈칸을 채워주셍. 빈 칸에 들어갈 수 있는 키워드는 다음과 같습니다.
+        </h2>
+        <div class="answer">
+          <ol>
+            <li>
+              <ins>제목(heading)</ins>태그는 문서 내에서 제목을 표현할 때
+              사용하는 태그입니다. 보통 <ins>h</ins>로 줄여서 쓰며, 레벨에
+              따라서 숫자가 붙습니다.
+            </li>
+            <li>
+              <ins>단락(paragraph)</ins>태그는 본문에 해당되는 내용을 감쌀 때
+              사용합니다. 줄여서 <ins>p</ins>로 씁니다. 본문 내에서 개행을
+              하려면 <span><</span>br<span>></span> 태그를 사용해야 합니다. 개행
+              태그br은 영어단어 <ins>linebreak</ins>에서 차용되었습니다.
+            </li>
+            <li>
+              글자를 굵게 표현할 때는
+              <ins><span><</span>b<span>></span></ins
+              >태그, 글자를 이탤릭체로 표현할 땐
+              <ins><span><</span>i<span>></span></ins
+              >태그, 글자에 밑줄을 쳐주고 싶을 땐
+              <ins><span><</span>u<span>></span></ins
+              >태그를 사용하고, 글자에 중간선을 표시하고 싶을 때는
+              <ins><span><</span>s<span>></span></ins
+              >태그를 사용합니다. 각 태그는 순서대로 영단어
+              <ins>bold, italic, underline, strike</ins>에서 이름을
+              차용하였습니다.
+            </li>
+            <li>
+              <ins>앵커(anchor)</ins>태그를 사용하면 다른 페이지로 이동하거나
+              현재 페이지 내에서 특정 위치로 초점을 이동할 수 있습니다. 줄여서
+              <ins>a</ins>로 씁니다. 주요 속성엔
+              <ins>href(hyper reference)</ins>이 있는데, 이 속성을 이용하면
+              링크된 리소스를 어디에 표시할지 지정할 수 있습니다.
+            </li>
+            <li>
+              <ins><span><</span>div<span>></span></ins
+              >태그와 <ins><span><</span>span<span>></span></ins
+              >태그는 의미가 없는 컨테이너 요소를 만들 때 사용합니다. 실제
+              개발할 때 사용 빈도가 매우 높은 태그들입니다.
+            </li>
+            <li>
+              순서가 없는 리스트를 표현할 땐
+              <ins>ul(unordered list)</ins>태그를, 순서가 있는 리스트를 표현할
+              땐 <ins>ol(ordered list)</ins>태그를 사용합니다. 또 다른 리스트
+              관련 태그론 <ins>dl(definition/description list)</ins>태그가
+              있는데, 이 태그는 용어(<span><</span>dt<span>></span> 태그로
+              표현)와 설명(<span><</span>dd<span>></span> 태그로 표현)을 하나의
+              세트로 묶어 항목으로 만들고 하나 이상의 항목으로 리스트를 구성할
+              때 사용합니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="theBox subjectBox">
+        <h2 class="title subjectTitle">
+          📌Q2. 2주 차에 배워본 다양한 태그들을 정리해봅시다.빈 칸을 채워주세요.
+          빈 칸에 들어갈 수 있는 키워드는 다음과 같습니다.
+        </h2>
+        <div class="answer">
+          <ol>
+            <li>
+              <ins><span><</span>img<span>></span></ins
+              >는 문서에 이미지를 삽입할 때 사용하는 태그로, 닫는 태그가 없는 빈
+              태그입니다. 필수 속성으론 이미지 경로를 나타내는 <ins>src</ins>가
+              있습니다.
+            </li>
+            <li>
+              이미지 태그를 사용할 땐 이미지를 대체하는 글을
+              <ins>alt</ins> 속성에 추가해줘야 웹 접근성 측면에서 좋습니다.
+            </li>
+            <li>
+              개발 할 땐 다른 경로에 있는 파일을 참조하여 작업을 해야 하는
+              경우가 많습니다. 이럴 때 현재 작업 중인 파일을 기준으로 참조하고자
+              하는 파일의 상대 경로를 나타내는 <ins>상대경로</ins> 개념을 사용해
+              해당 파일을 참조할 수 있고, 실제 파일이 위치한 곳을 기준으로 해당
+              파일의 위치를 나타내는 <ins>절대경로</ins> 개념을 사용해 파일을
+              참조할 수 있습니다. 상대경로에서 <ins>./</ins>는 실제 그 파일이
+              위치한 폴더를 나타내고, <ins>../</ins>는 상위 폴더를 나타냅니다.
+            </li>
+            <li>
+              표를 그릴 땐 <ins><span><</span>table<span>></span></ins
+              >태그를 사용합니다. 표 태그는 하나 이상의
+              <ins><span><</span>tr<span>></span></ins> 태그(행을 나타내는
+              태그)로 이루어져 있습니다. 셀을 나타내는 태그론 제목 셀을 나타내는
+              <ins><span><</span>th<span>></span></ins> 태그, 셀을 나타내는
+              <ins><span><</span>td<span>></span></ins> 태그가 있습니다.
+            </li>
+            <li>
+              표를 구성할 때는
+              <ins>위에서 밑으로, 좌측에서 우측으로</ins> 작성하면 됩니다.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="theBox subjectBox">
+        <h2 class="title subjectTitle">
+          📌Q3. 미국 국립 보건원에 따른 콜레스테롤 검사의 정상범위는 다음과
+          같습니다. 강의에서 배운 내용을 활용해 아래 이미지와 유사한 표를 직접
+          만들어보세요.
+        </h2>
+        <div class="tablePractice">
+          <table>
+            <caption>
+              콜레스테롤 검사의 정상범위
+            </caption>
+            <thead>
+              <tr>
+                <th>검사항목</th>
+                <th colspan="4">
+                  양호<span><</span>----------------<span>></span>높음
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">콜레스테롤</td>
+                <td colspan="2">정상</td>
+                <td>경계</td>
+                <td>높음</td>
+              </tr>
+              <tr>
+                <td colspan="2"><span><</span>200</td>
+                <td>200~239</td>
+                <td><span>>=</span>240</td>
+              </tr>
+              <tr>
+                <td rowspan="2">중정지방</td>
+                <td colspan="2">정상</td>
+                <td>경계</td>
+                <td>높음</td>
+              </tr>
+              <tr>
+                <td colspan="2"><span><</span>150</td>
+                <td>150~199</td>
+                <td>200~499</td>
+              </tr>
+              <tr>
+                <td rowspan="2">LDL콜레스테롤</td>
+                <td>양호</td>
+                <td>높은정상</td>
+                <td>경계</td>
+                <td>높음</td>
+              </tr>
+              <tr>
+                <td><span><</span>100</td>
+                <td>100~129</td>
+                <td>130~159</td>
+                <td>160~189</td>
+              </tr>
+              <tr>
+                <td rowspan="2">HDL콜레스테롤</td>
+                <td colspan="2">높음</td>
+                <td>-</td>
+                <td>낮음</td>
+              </tr>
+              <tr>
+                <td colspan="2"><span><</span>60</td>
+                <td>-</td>
+                <td><span><</span>40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="theBox subjectBox">
+        <h2 class="title subjectTitle">
+          📌Q4. 폼 요소가 사용되는 대표적인 페이지는 로그인 페이지입니다. 로그인
+          페이지엔 아이디, 비밀번호, 로그인 상태 유지, 로그인 버튼 등이
+          들어가죠. 네이버 로그인 페이지에선 어떤 form 요소를 사용해 로그인
+          페이지를 만들었는지 예시를 참고해 서술해보도록 합시다.
+        </h2>
+        <div class="answer">
+          <ol>
+            <li>
+              아이디 입력란
+              <p>
+                input 태그를 사용해 아이디를 입력받습니다. 아이디는 일반적으로
+                일반 텍스트인 경우가 많이 때문에 type속성은 text입니다.
+                placeholder속성을 사용해 해당 인풋 박스가 아이디를 입력하는
+                공간이란걸 표시해주고 있습니다.
+              </p>
+            </li>
+            <li>
+              비밀번호 입력란
+              <p>
+                input태그를 사용해 비밀번호를 입력받습니다. type은
+                password입니다. 따라서 입력시 입력하는 글자가 화면에 바로
+                표시되지 않습니다. placeholder를 통해 비밀번호를 입력하는
+                칸이라는 점을 나타내주고 있습니다. maxlenth를 통해 최대 입력가능
+                글자가 16자임을 알수 있습니다.
+              </p>
+            </li>
+            <li>
+              로그인 상태 유지버튼
+              <p>
+                input 태그를 사용해 로그인 상태 유지를 할지를 체크 할 수
+                있습니다. 체크여부를 묻는 부분이어서 input의 type은
+                checkbox입니다. 또한 value를 off로 해놨기 때문에 기본값은
+                체크해제가 기본값입니다.
+              </p>
+            </li>
+            <li>
+              IP보안 버튼
+              <p>
+                로그인 상태 유지버튼과 마찮가지로 input이며, checkbox
+                type입니다. value도 off로 설정되어 있습니다. 다만 보기에는 on로
+                보여서 이부분 연구가 필요합니다.
+              </p>
+            </li>
+            <li>
+              로그인 버튼
+              <p>
+                로그인 버튼은 button 태그를 사용해 작성되었습니다. 작동하는
+                type은 submit이어서 이 버튼을 누르게 되면 창에 입력한 정보들이
+                서버로 넘어가게 됩니다.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
