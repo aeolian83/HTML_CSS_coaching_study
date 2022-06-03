@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[LEO_05] Mission Week1</title>
+    <style>
+        * {
+            font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+        }
+
+        h1 {
+            color:burlywood;
+        }
+
+        h2 {
+            color:darkblue;
+        }
+
+        strong {
+            color:green;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>[LEO_05] Mission Week1</h1>
+    <h2>미션1. 빈칸 채우기(1)</h2>
+    <div class="mission01">
+        HTML은 <strong>HyperText Markup Language</strong>의 약자로 웹을 이루는 가장 기초적인 구성 요소입니다. 웹페이지의 모양을 꾸미는데 쓰는 CSS와 기능, 동작을 구현하는데 쓰는 JavaScript와 함께 쓰입니다. <br>
+        HTML 요소는 <strong>태그</strong>를 사용해서 다른 텍스트와 구분합니다. <strong>태그</strong>는 여는 홀화살괄호(<>)로 감쌉니다. <br>
+        프론트엔드 개발자는 <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>를 사용해 웹을 만듭니다.
+    </div>
+    <h2>미션2. 빈칸 채우기(2)</h2>
+    <div class="mission02">
+        HTML 태그엔 <strong>속성</strong>을 추가할 수 있습니다. <strong>속성</strong>은 태그에 추가 정보를 제공하거나 태그의 동작이나 표현을 제어할 수 있게 해줍니다. <br>
+        속성은 이름과 값으로 이루어져 있습니다. 속성값은 <strong>홑따옴표(')</strong>와 <strong>겹따옴표(")</strong>로 감싸 표현합니다. <br>
+        한 태그에 여러 속성을 선언할 수 있는데, 여러 속성을 선언할 때는 <strong>공백</strong>으로 구분해서 사용합니다.
+    </div>
+    <div class="ref02">
+        (참조: <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/HTML_basics#html_%EC%9A%94%EC%86%8C_%EB%B6%84%EC%84%9D">HTML 요소 분석 - HTML 기본 - Web 개발 학습하기</a> )
+    </div>
+    <h2>미션3. 코드 고치기</h2>
+    <h3>- 원본</h3>
+    <iframe height="300" style="width: 100%;" scrolling="no" title="mission03" src="https://codepen.io/kkumtree/embed/qBxbLjr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/kkumtree/pen/qBxbLjr">
+        mission03</a> by kkumtree (<a href="https://codepen.io/kkumtree">@kkumtree</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+    </iframe>
+    <h3>- 수정 : 'Run Pen'을 눌러주세요!</h3>
+    <iframe height="300" style="width: 100%;" scrolling="no" title="mission03-answer" src="https://codepen.io/kkumtree/embed/preview/mdXVQMr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/kkumtree/pen/mdXVQMr">
+        mission03-answer</a> by kkumtree (<a href="https://codepen.io/kkumtree">@kkumtree</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+    </iframe>
+    <div class="ref03">
+        (참조: <a href="https://jasmintime.com/198">HTML 공백 & 한 줄 띄우기(줄바꾸기) :: Jasmin Time</a> )
+    </div>
+    <h2>미션4. 요소별 사용된 태그 확인</h2>
+    <ol>
+        <p>
+            <li>위쪽의 NAVER 로고: a, h1</li>
+            <ul>
+                <li>a 태그를 사용하여, 클릭시 네이버 메인으로 이동할 수 있게 함.</li>
+                <li>로고 이미지 경로의 경우 CSS를 활용하여 a태그에 적용하였음.</li>
+                <li>a 태그 하위에 h1 태그로 'NAVER'를 적어두었음(접근성).</li>
+                <li>h1 텍스트의 경우 CSS에서 'clip: rect(0 0 0 0)'을 걸어놔서 보이지않게 설정하였음.</li>
+            </ul>
+        </p>
+            <li>아이디와 비밀번호를 입력하는 네모 상자: div, span, input, </li>
+            <ul>
+                <li>'id_pw_wrap'(div)로 묶고 아래에 각각 'input_row'(div) 란 이름으로 묶었음.</li> 
+                <li>그 아래에 'icon_cell'(span), 'input_text'(input), 'button'(span)을 나란히 배치함.</li>
+                <li>'icon_cell'의 경우, 각 아이콘의 이미지를 불러오는 'icon_{name}'(span)과 접근성을 위한 'blind'(span)를 설정함.</li>
+                <li>'input_text'의 경우, placeholder 속성을 통해 입력 전에만 각각 '아이디'와 '비밀번호'란 글자를 표시하게 함.</li>
+                <li>'button'의 경우, 한 글자라도 입력하였을 시 우측에 Ⓧ표시가 나오게 하여('icon_delete'), 누르면 내용이 지워짐.</li>
+                <li>'button'의 하위에도 'icon_delete'외에 접근성을 위한 'blind'(span)를 설정함.</li>
+            </ul>
+        <p>
+            <li>초록색 로그인 버튼: div, button, span</li>
+            <ul>
+                <li>'btn_login_wrap'(div) 아래 'submit'이라는 타입 속성을 적용한 'btn_login'(button)이 있음.</li>
+                <li>그 하위에 'btn_text'(span)이 있고 버튼에 쓰여진 글자 '로그인'을 가지고 있음.</li>
+            </ul>
+        </p>
+    </ol>
+    <img src="https://i.ibb.co/S3zvwYZ/Screen-Shot-2022-05-10-at-1-15-21-AM.png" alt="Screen-Shot-2022-05-10-at-1-15-21-AM" border="0">
+    <img src="https://i.ibb.co/GRJQhH9/Screen-Shot-2022-05-10-at-1-14-28-AM.png" alt="Screen-Shot-2022-05-10-at-1-14-28-AM" border="0">
+    <img src="https://i.ibb.co/dMJ7QqN/Screen-Shot-2022-05-10-at-1-16-04-AM.png" alt="Screen-Shot-2022-05-10-at-1-16-04-AM" border="0">
+</body>
+</html>

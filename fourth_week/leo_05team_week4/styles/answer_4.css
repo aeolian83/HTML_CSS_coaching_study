@@ -1,0 +1,88 @@
+.red-box {
+  width: 100%;
+  background-color: red;
+}
+
+.blue-box {
+  width: 100%;
+  background-color: blue;
+}
+
+.horizontal-container {
+  width: 600px;
+  height: 200px;
+  border-color: black;
+  border: 2px solid;
+  margin-top: 20px;
+}
+
+.vertical-container {
+  width: 400px;
+  height: 500px;
+  border-color: black;
+  border: 2px solid;
+  margin-top: 20px;
+}
+
+.first-box-1 {
+  height: 100%;
+  width: 100px;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.second-box-1 {
+  height: 100%;
+  width: 150px;
+  display: inline-block;
+  margin-left: 130px;
+}
+
+.first-box-2 {
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.second-box-2 {
+  height: 200px;
+  margin-top: 20px;
+}
+
+.parent-3 {
+  height: 400px;
+  padding-top: 20px;
+}
+
+.child-3 {
+  height: 200px;
+  margin-top: 40px;
+}
+
+.parent-4 {
+  height: 400px;
+  margin-top: 40px;
+}
+
+.child-4 {
+  height: 200px;
+  margin-top: 40px;
+}
+
+.parent-5 {
+  height: 400px;
+}
+
+.child-5 {
+  height: 200px;
+  margin-top: 40px;
+}
+
+.navigation {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  height: 160px;
+  margin-top: 60px;
+}

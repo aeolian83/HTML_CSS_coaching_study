@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델 ~ W + H + P + B</title>
+    <!-- https://developer.mozilla.org/ko/docs/Web/CSS/@import -->
+    <style type="text/css" media="screen">
+      @import url('../styles/global.css');
+    </style>
+  </head>
+  <body>
+    <h1>[해설]</h1>
+    <div>
+      박스의 크기는 boxmodel의 요소중 margin을 제외한 border, padding, content에 의해 결정 됩니다. <br /> 
+      주어진 html page에서 box class로 정의되어진 박스는 css에서 상대길이 %로 정의되었습니다. <br /> 
+      상대길이는 부모요소의 값에 따라 결정되는데, 부모인 section이 각각 400px씩으로 정의되어 있고, <br />
+      박스는 50%(width), 75%(height)로 정의되었기 때문에 <br />
+      박스의 content 영역은 각각 200px(width) 300px(height) 정의됩니다. <br />
+      padding은 지정되지 않아 값이 없고, border가 top, right, bottom, left가 <br /> 
+      모두 10px로 지정되어 있기 때문에 <br />
+      최종 박스의 크기는 content영역의 크기에 border 영역을 더한 값 220px x 320px 입니다. <br />
+    </div>
+    <h2>[계산]</h2>
+    <div>
+      <li>가로: 400px * 50% + 10px * 2 {좌우 border} = 220px</li>
+      <li>세로: 400px * 75% + 10px * 2 {상하 border} = 320px</li>
+    <div>
+    <h2>[참조]</h2>
+    <div class="reference1">
+      <h3>MDN 스크린샷의 경우 클릭하면 해당 페이지로 이동합니다.</h3>
+      <div>
+      <img src="../images/ref3-1.png" width="100%"/><br />
+      </div>
+      <a
+        href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"
+        target="_blank"
+        ><img src="../images/ref3-2.png" /></a
+      ><br />
+      <a
+        href="https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing"
+        target="_blank"
+        ><img src="../images/ref3-3.png" /><br />
+      </a>
+    </div>
+  </body>
+</html>

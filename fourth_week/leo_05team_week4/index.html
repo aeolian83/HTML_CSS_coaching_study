@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4th mission</title>
+    <!-- https://developer.mozilla.org/ko/docs/Web/CSS/@import -->
+    <style type="text/css" media="screen">
+      @import url('styles/global.css');
+    </style>
+    <!-- https://developer.mozilla.org/ko/docs/Web/HTML/Element/script#%EC%98%88%EC%A0%9C -->
+    <script type="module" src="scripts/global.js"></script>
+    <script nomodule src="scripts/global.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Mission 4 (Leo_05_team)</h1>
+      <em>Chrome(PC)이라면 F12를 눌러, Console을 확인해보세요</em><br />
+      <img class="intro" src="images/intro.jpeg" />
+      <blockquote>
+        <div class="blessing">
+          ▷ SYSTEM: 이야! <br />
+          &nbsp;&nbsp;'힘내라 너구리'가 당신을 응원했습니다! <br />
+          &nbsp;&nbsp;이 버프로 당신이 하던 일이 <br />
+          &nbsp;&nbsp;신기하게 잘 풀릴꺼에요! <br />
+          &nbsp;&nbsp;이 축복을 다른 사람에게도 전하세요!
+        </div>
+      </blockquote>
+      <hr />
+      <h2>바로가기</h2>
+      <div class="button">
+        <span><a href="#q1-bookmark">Q1</a></span>
+        &nbsp;
+        <span><a href="#q2-bookmark">Q2</a></span>
+        &nbsp;
+        <span><a href="#q3-bookmark">Q3</a></span>
+        &nbsp;
+        <span><a href="#q4-bookmark">Q4</a></span>
+      </div>
+      <hr />
+      <h2 id="q1-bookmark">
+        Q1.&nbsp;4주 차에 배운 단위, 배경, 박스 모델 관련 개념 정리해봅시다.
+        <br />
+        빈 칸을 채워 봐주세요. 빈 칸에 들어갈 수 있는 키워드는 다음과 같습니다.
+      </h2>
+      <div class="wordbox">
+        16, auto, background-color, background-image, background-repeat,
+        background-position, background-attachment, border 영역, content 영역,
+        containing block, content 영역, margin 영역, MDN Web Docs, rem, RGB(또는
+        RBGA), padding 영역, px, W3C, 가로, 마진 병합(margin collapse), 상대
+        길이, 시계 방향, 절대 길이
+      </div>
+      <br />
+      <div class="q1">
+        <div class="phrase1">
+          1.&nbsp;CSS의 속성은 그 종류가 매우 다양하고 지속적으로
+          업데이트되는데, 이런 변화에 대응하려면 CSS 속성을 정의하는
+          <strong class="filled">W3C</strong>에서 제공하는 공식 사이트인
+          https://www.w3.org나 모질라 재단의
+          <strong class="filled">MDN Web Docs</strong>를 참고하는 게 좋습니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          2.&nbsp;CSS 속성 단위는 크게
+          <strong class="filled">절대 길이</strong>와
+          <strong class="filled">상대 길이</strong> 단위로 구분됩니다. 절대
+          길이에서 <strong class="filled">px</strong>, 상대 길이에서&nbsp;
+          <strong class="filled">rem</strong>은 가장 많이 쓰이는 단위입니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          3. 폰트에 색상을 적용할 때 사용하는 속성은 color 속성입니다. color
+          속성의 값은 다양한 방식으로 적용할 수 있는데, 컬러 키워드,
+          <strong class="filled">16</strong>진법,
+          <strong class="filled">RGB(RGBA)</strong> 방식이 있습니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          4. 요소의 배경에 관련된 속성을 지정할 땐 background 속성을 사용합니다.
+          우리가 강의를 통해 배운 background 속성은
+          <strong class="filled">background-color</strong>,
+          <strong class="filled">background-image</strong>,
+          <strong class="filled">background-repeat</strong>,
+          <strong class="filled">background-position</strong>,
+          <strong class="filled">background-attachment</strong>입니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          5. "박스 모델에 대해 설명해보세요."라는 질문은 프론트엔드 개발자 면접
+          단골 질문 중 하나입니다. 박스 모델은 크게 4가지 영역,
+          <strong class="filled">content 영역</strong>,
+          <strong class="filled">border 영역</strong>,
+          <strong class="filled">padding 영역</strong>,
+          <strong class="filled">margin 영역</strong>으로 이루어져 있습니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          6. padding 속성은 축약해서 지정할 수 있는데, 이때 위쪽을 기준으로
+          <strong class="filled">시계 방향</strong>으로 속성값을 지정합니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          7. margin 속성의 값을 <strong class="filled">auto</strong>로 설정하면
+          브라우저가 자동으로 margin을 계산해 주는데, 개발자는 이 값을 주로
+          수평(가로축) 중앙 정렬할 때 사용합니다(주의할 점은 요소에 width 값이
+          있어야 합니다).
+        </div>
+        <br />
+        <div class="phrase1">
+          8. <strong class="filled">마진 병합(margin collapse)</strong>은 인접한
+          두 개 이상의 수직 방향 박스의 마진이 하나로 합쳐지는 것을 의미하는데,
+          이 개념을 활용하면 첫 번째와 두 번째 컴포넌트의 조합이 다양한 경우
+          여백을 다르게 사용할 수 있습니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          9. 패딩값을 상대 길이 단위인 %를 사용해 지정하면 상위 요소(containing
+          element)의 <strong class="filled">가로</strong> 길이를 기준으로 그
+          값이 계산됩니다. 이 방식은 padding-top, padding-bottom에도 적용됩니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          10. width와 height 속성은 박스 모델에서
+          <strong class="filled">content 영역</strong>의 너비와 높이를 지정할 때
+          사용합니다.
+        </div>
+        <br />
+        <div class="phrase1">
+          11. height 속성을 %를 사용해서 지정할 땐
+          <strong class="filled">containing block</strong>을 기준으로 그 값이
+          결정됩니다.
+        </div>
+      </div>
+      &nbsp;<br />
+      <h2 id="q2-bookmark">
+        Q2. 4주 차에 배운 폰트, 텍스트 관련 개념을 정리해봅시다. <br />
+        빈칸을 채워 봐주세요. 빈칸에 들어갈 수 있는 키워드는 다음과 같습니다.
+      </h2>
+      <div class="wordbox">
+        1.2, @font-face, em, font-family, font-size, font-size, font-style,
+        font-weight, margin의 auto 값, generic-family, text-align: center;,
+        text-indent, text-decoration, letter-spacing, vertical-align,
+        word-break, word-spacing, word-wrap, white-space, 단위, 블록 레벨 요소,
+        웹 폰트,
+      </div>
+      <br />
+      <div class="q2">
+        <div class="phrase2">
+          1. 모든 폰트는 <strong class="filled">em</strong>박스를 가지고 있는데,
+          <strong class="filled">em</strong>은 폰트의 전체 높이를 의미합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          2. font-family 속성을 지정할 땐
+          <strong class="filled">generic-family</strong>를 함께 지정해줘서
+          family-name으로 지정한 글꼴을 사용할 수 없을 경우를 대비해야 합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          3. em 박스, 상·하단의 여백을 합친 높이를 지정해주는 속성인
+          line-height의 기본값은 normal인데, 브라우저에 따라 다르지만 보통
+          <strong class="filled">1.2</strong>정도로 할당되어 있습니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          4. line-height는 계산된 값이 아닌 숫자 값을 상속하기 때문에 숫자 값을
+          사용하면 부모 엘리먼트에서 계산된 값 대신 비율을 그대로 상속받을 수
+          있으므로, 가능하면 <strong class="filled">단위</strong>가 없는 값을
+          사용하는 것이 좋습니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          5. 폰트의 크기는 <strong class="filled">font-size</strong> 속성으로,
+          굵기는 <strong class="filled">font-weight</strong> 속성으로, 스타일은
+          <strong class="filled">font-style</strong> 속성으로 지정합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          6. 다양한 글꼴 속성을 한 번에 선언할 수 있도록 해주는 font 속성을
+          사용할 때, <strong class="filled">font-size</strong>와
+          <strong class="filled">font-family</strong>는 반드시 선언해줘야
+          합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          7. <strong class="filled">웹 폰트</strong>는 서버에 저장해 제공하거나,
+          웹 경로를 통해 사용하는 폰트를 말합니다. 웹에 있는 글꼴을 사용자의
+          로컬 환경(컴퓨터)으로 다운로드하여 적용할 땐
+          <strong class="filled">@font-face</strong>속성을 사용합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          8. <strong class="filled">vertical-align</strong> 속성을 사용하면
+          CSS로 수직 정렬을 할 수 있는데, 주의할 점은
+          <strong class="filled">블록 레벨 요소</strong>엔 해당 속성이 적용되지
+          않는다는 점입니다(inline, table-cell box에는 적용).
+        </div>
+        <br />
+        <div class="phrase2">
+          9. 블록 요소를 가운데 정렬할 땐
+          <strong class="filled">margin의 auto 값</strong>을, 인라인 요소를
+          가운데 정렬할 땐 <strong class="filled">text-align: center;</strong>를
+          사용합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          10. 들여쓰기는 <strong class="filled">text-indent</strong> 속성,
+          밑줄이나 모양, 색상 변경 등의 장식은
+          <strong class="filled">text-decoration</strong> 속성을 사용해야
+          합니다.
+        </div>
+        <br />
+        <div class="phrase2">
+          11. 요소 안 공백을 어떻게 처리할지는
+          <strong class="filled">white-space</strong> 속성을, 글자(자간) 사이의
+          간격을 지정할 땐
+          <strong class="filled">letter-spacing</strong> 속성을, 단어 사이의
+          간격을 지정할 땐 <strong class="filled">word-spacing</strong> 속성을,
+          단어가 라인 끝에 나올 경우 어떻게 처리할지는
+          <strong class="filled">word-break</strong> 속성을, 요소를 벗어난
+          단어의 줄 바꿈을 지정할 땐 <strong class="filled">word-wrap</strong>
+          속성을 사용합니다.
+        </div>
+      </div>
+      <hr />
+      <h2 id="q3-bookmark">
+        Q3. question.html를 보고 검은 테두리의 상자가 실제 화면에서 <br />
+        가로, 세로를 몇 픽셀 차지하고 있는지 맞혀봅시다. (객관식). <br />
+        그리고 박스모델에서 배운 개념을 사용해 그 이유를 적어봅시다. (주관식).
+      </h2>
+      <div>
+        <li>200px x 300px</li>
+        <li><strong class="filled">220px x 320px [정답!]</strong></li>
+        <li>210px x 310px</li>
+        <li>220px x 220px</li>
+      </div>
+      <br />
+      <details>
+        <summary class="q3-snippet">question.html 코드</summary>
+        <div>
+          <!-- code 표현부이기에 indent가 깨져있습니다. -->
+          <pre
+            class="line-numbers language-markup"
+            contenteditable="false"
+          ><code class=" language-markup">
+<span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ko<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>박스 사이즈<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+        <span class="token selector">section</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">.box</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 75%<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> 10px solid<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        </div>
+      </details>
+      <br />
+      &nbsp;
+      <div class="button">
+        <span
+          ><a href="./pages/answer_3.html" target="_blank"
+            >Q3. 답안 보기</a
+          ></span
+        >
+      </div>
+      &nbsp;
+      <hr />
+      <h2 id="q4-bookmark">
+        Q4. 마진 병합(margin collapse)은
+        <a
+          href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model#%EC%95%88%EB%82%B4%EC%84%9C"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          data-mce-href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model#%EC%95%88%EB%82%B4%EC%84%9C"
+          >CSS 박스 모델</a
+        >
+        을 <br />제대로 이해하고 응용하기 위해 꼭 필요한 필수 개념입니다. <br />
+        question.html에 있는 여러 예시를 보고, <br />
+        각 예시 별로 마진 병합이 일어나는지 여부와, <br />
+        마진 병합이 일어난다면 아래 페이지를 참고하여 그 이유를 적어주세요.
+        <br />
+        (마진 병합이 일어나지 않았다면 <br />
+        &nbsp;아래 페이지를 참고해 그 이유를 적어주시면 가산점을 드립니다).
+      </h2>
+      <div>
+        <ul>
+          <li>
+            <span
+              style="font-size: 12pt; color: #000000"
+              data-mce-style="font-size: 12pt; color: #000000;"
+              ><strong
+                >참고 페이지1:&nbsp;<a
+                  style="color: #000000"
+                  href="https://www.boostcourse.org/cs120/lecture/92916"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-mce-href="/cs120/lecture/92916"
+                  data-mce-style="color: #000000;"
+                  >https://www.boostcourse.org/cs120/lecture/92916</a
+                ></strong
+              ></span
+            >
+          </li>
+          <li>
+            <span
+              style="font-size: 12pt; color: #000000"
+              data-mce-style="font-size: 12pt; color: #000000;"
+              ><strong
+                >참고 페이지2:&nbsp;<a
+                  style="color: #000000"
+                  href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  data-mce-href="https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing"
+                  data-mce-style="color: #000000;"
+                  >[MDN] CSS Box Model : Mastering margin collapsing</a
+                ></strong
+              ></span
+            >
+          </li>
+        </ul>
+        <details>
+          <summary class="q4-snippet">question.html 코드</summary>
+          <div>
+            <!-- code 표현부이기에 indent가 깨져있습니다. -->
+            <pre
+              class="line-numbers language-markup"
+              contenteditable="false"
+            ><code class=" language-markup">
+<span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ko<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>마진 병합<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+        <span class="token selector">.red-box</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.blue-box</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.horizontal-container</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 600px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">border-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> 2px solid<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.vertical-container</span> <span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+            <span class="token property">border-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> 2px solid<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.first-box-1</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+            <span class="token property">margin-right</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.second-box-1</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+            <span class="token property">margin-left</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.first-box-2</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+            <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.second-box-2</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.parent-3</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+            <span class="token property">padding-top</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.child-3</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.parent-4</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.child-4</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.parent-5</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.child-5</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.navigation</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+            <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.heading</span> <span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+            <span class="token property">margin-top</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>예시1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>horizontal-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first-box-1 red-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>second-box-1 blue-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>예시2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first-box-2 red-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>second-box-2 blue-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>예시3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>parent-3 red-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>child-3 blue-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>예시4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>parent-4 red-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>child-4 blue-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>예시5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>parent-5 red-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>child-5 blue-box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+          </div>
+        </details>
+      </div>
+      <br />
+      &nbsp;
+      <div class="button">
+        <span
+          ><a href="./pages/answer_4.html" target="_blank"
+            >Q4. 답안 보기</a
+          ></span
+        >
+      </div>
+      &nbsp;
+    </div>
+  </body>
+</html>
