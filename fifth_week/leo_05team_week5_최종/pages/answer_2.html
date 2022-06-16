@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <title>inline 요소 이해하기</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style media="screen">
+      @import url('../styles/global.css');
+    </style>
+  </head>
+
+  <body>
+    <h1>inline 레벨 요소와 block 레벨 요소(display)</h1>
+    <h2>[문제 예제코드](수정 전)</h2>
+    <div>
+      <img
+        alt="boostcourse 코칭스터디 모집"
+        src="week5-img-760.png"
+        style="height: 300px"
+      />
+    </div>
+    <h2>[해설]</h2>
+    <div class="answer-box2">
+      <ul>
+        <li>
+          img태그는 inline 레벨 요소로서, block 레벨 요소인 div태그 안에 있음
+        </li>
+        <li>
+          인라인 레벨 요소는 너비의 영향을 받지 않고, <br />블록 레벨 요소는 앞
+          전에 학습했듯이 한 행을 가득 채움
+          <img src="../images/display.png" width="100%" />
+        </li>
+        <li>
+          <strong
+            >블럭 레벨 요소 하위의 인라인 레벨 요소는 <br />마치 '한글같은
+            워드프로세서에서 이미지를 글자로 취급하듯이'<br />
+            글자처럼 다루기 때문에 나머지 영역은 블럭 레벨 요소의 특성대로<br />
+            한 줄의 나머지 영역을 공백으로 취급하는 것으로 판단됨</strong
+          >
+        </li>
+        <li>
+          <h3>div 요소의 computed 값: img</h3>
+          <img src="../images/week5-div-block.png" width="100%" />
+        </li>
+        <li>
+          <h3>img 요소의 computed 값: img</h3>
+          <img src="../images/week5-img-inline.png" width="100%" />
+        </li>
+      </ul>
+    </div>
+    <h2>[해결방안](div의 크기도 같게!)</h2>
+    <h3>우선순위 설정은 순전히 개인 취향</h3>
+    <div class="answer-box2">
+      <ol>
+        <li>
+          div의 스타일 속성에 'line-height: 0%;'설정
+          <br />
+          <s>img의 스타일 속성에 'display: inline-block;'설정</s
+          >(불필요함)<br />
+          <div style="line-height: 0%">
+            <img
+              alt="boostcourse 코칭스터디 모집"
+              src="week5-img-760.png"
+              style="height: 300px"
+            />
+          </div>
+          cf. 이미지에 inline-block; 만 줬더니, 5px이 차이나서 글자취급을 한다는
+          점에 착안, <br />&nbsp;&nbsp;아예 줄높이를 없애니 되었습니다.<br />
+          <u>'font-size: 0%'</u>도 생각해봤는데, 글자가 있는건 아니니 여백
+          측면에서만 접근 <br />&nbsp;&nbsp;'height: 500px'는 작위적이라 구미가
+          당기질 않네요<br />
+          <s>왜 disply: inlink-block; 을 주면 5px이 굳이 남는 걸까요??????</s>
+        </li>
+        <li>
+          img의 스타일 속성에 'flex'나 'grid', 'block' 속성 적용<br />
+          (셋 다 블럭 레벨 요소, 참조:
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+            >MDN</a
+          >)
+          <div>
+            <img
+              alt="boostcourse 코칭스터디 모집"
+              src="week5-img-760.png"
+              style="display: inline-block; height: 300px"
+            />
+          </div>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

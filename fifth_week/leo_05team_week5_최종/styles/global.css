@@ -1,0 +1,134 @@
+/* 전체 포맷 */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  min-width: 550px;
+  width: 80%;
+  border-radius: 15px;
+  border: 3px solid rgb(0, 209, 249);
+  padding: 20px;
+  margin: auto;
+}
+
+.intro {
+  height: fit-content;
+  width: 90%;
+  display: block;
+}
+
+.button span {
+  width: 200px;
+  text-align: center;
+  border: 1px solid black;
+  margin: -1px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.button span:hover {
+  border: 5px dotted rgb(197, 206, 61);
+  margin: -5px;
+  border-radius: 10px;
+}
+
+.filled {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.reference {
+  color: #666666;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.images > img {
+  width: 100%;
+  border: 2px dashed #333;
+}
+
+.answer-box1 {
+  align-items: center;
+  width: min-content;
+  border: 5px dotted;
+  padding: 1%;
+}
+
+.answer-box2 {
+  align-items: center;
+  width: fit-content;
+  border: 5px dotted;
+  padding: 1%;
+}
+
+/* 단어 선택지 */
+
+.wordbox {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  padding: 1%;
+}
+
+/* 코드 스니펫 */
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 50px;
+  counter-reset: linenumber;
+}
+
+pre[class*='language-'] {
+  background: #333 !important;
+}
+
+pre[class*='language-'] {
+  padding: 4px 20px;
+  overflow: auto;
+  margin: 25px 0;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: #f8f8f2;
+  background: none;
+  font-family: NanumSquareWebFont-R, 'NanumSquareWebFont', '나눔고딕',
+    NanumGothic, '맑은 고딕', Malgun Gothic, 'Apple SD Gothic Neo', '돋움',
+    dotum, Helvetica, arial, sans-serif;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 14px;
+  line-height: 24px;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* details 관련 */
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+  background-color: black;
+  color: white;
+}
